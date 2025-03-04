@@ -41,12 +41,16 @@ console.log(divisionResult)
 
 // HTMl process
 
-document.querySelector('button')
-    .addEventListener('click', ()=>{
+let btn = document.querySelector('button')
+
+
+    btn.addEventListener('click', ()=>{
         let h2 = document.getElementById('heading')
         h2.innerText = 'Madarchod Toha tore cudi'
+        btn.classList.add('hidden')
         setTimeout(()=>{
             h2.innerText = ''
+            btn.classList.remove('hidden')
         }, 2000)
     })
 
